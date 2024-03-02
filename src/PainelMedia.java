@@ -84,6 +84,7 @@ public class PainelMedia extends JPanel {
 				tfNota1.setText("");
 				tfNota2.setText("");
 				tfMedia.setText("");
+				tfNota1.requestFocus();
 			}
 		});
 		btnLimpar.setBounds(171, 183, 89, 23);
