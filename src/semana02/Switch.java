@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
 package semana02;
 
 import javax.swing.JOptionPane;
 
 /**
- * 
+ *
  */
 public class Switch {
 

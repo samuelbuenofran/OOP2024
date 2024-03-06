@@ -65,6 +65,7 @@ public class PainelCalc extends JPanel {
 
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				float number1 = Float.parseFloat(textFieldNumber1.getText());
 				float number2 = Float.parseFloat(textFieldNumber2.getText());
@@ -110,6 +111,7 @@ public class PainelCalc extends JPanel {
 
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				textFieldNumber1.setText("");
 				textFieldNumber2.setText("");

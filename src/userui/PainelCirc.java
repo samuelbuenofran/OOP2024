@@ -17,7 +17,7 @@ public class PainelCirc extends JPanel {
 
 	/**
 	 * Create the panel.
-	 * 
+	 *
 	 */
 	public PainelCirc() {
 		setLayout(null);
@@ -33,6 +33,7 @@ public class PainelCirc extends JPanel {
 
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				double radius = Double.parseDouble(textFieldRadius.getText());
 				double area = 0;
@@ -51,6 +52,7 @@ public class PainelCirc extends JPanel {
 
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				textFieldRadius.setText("");
 				textFieldRadius.requestFocus();

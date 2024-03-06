@@ -51,6 +51,7 @@ public class PainelQuad extends JPanel {
 
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				double sides = Double.parseDouble(textFieldSides.getText());
 				DecimalFormat df = new DecimalFormat("#.##");
@@ -79,6 +80,7 @@ public class PainelQuad extends JPanel {
 
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				textFieldSides.setText("");
 				textFieldArea.setText("");

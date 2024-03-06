@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package semana02;
 
 /**
- * 
+ *
  */
 public class Ternario {
 

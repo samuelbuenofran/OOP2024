@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package semana02;
 
 /**
- * 
+ *
  */
 public class For03 {
 
@@ -26,8 +26,8 @@ public class For03 {
 		}
 
 		// Alternative way to print the array
-		for (int i = 0; i < v.length; i++) {
-			System.out.println("Alt-printing: " + v[i]);
+		for (int element : v) {
+			System.out.println("Alt-printing: " + element);
 		}
 
 		// Percorre os elementos usando o iterator

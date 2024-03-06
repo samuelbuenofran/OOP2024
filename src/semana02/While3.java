@@ -1,12 +1,12 @@
 /**
- * 
+ *
  */
 package semana02;
 
 import javax.swing.JOptionPane;
 
 /**
- * 
+ *
  */
 public class While3 {
 
@@ -18,8 +18,9 @@ public class While3 {
 		double total = 0, v = 0;
 		do {
 			String s = JOptionPane.showInputDialog("Digite um valor:");
-			if (s == null)
+			if (s == null) {
 				break;
+			}
 			// Explanation: Double.parseDouble() throws a NumberFormatException if the
 			// string does not contain a parsable double.
 			v = Double.parseDouble(s);

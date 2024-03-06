@@ -9,6 +9,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.WindowConstants;
 import javax.swing.border.EmptyBorder;
 
 public class Frame01 extends JFrame {
@@ -40,7 +41,7 @@ public class Frame01 extends JFrame {
 	public Frame01() {
 		setResizable(false);
 		setTitle("Minha Aplicação");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setBounds(100, 100, 746, 566);
 
 		// Creates a new JMenuBar object called menuBar
@@ -130,6 +131,7 @@ public class Frame01 extends JFrame {
 
 		JMenuItem mnExe02 = new JMenuItem("Exe02");
 		mnExe02.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				PainelNotas p = new PainelNotas();
 				frame.setContentPane(p);
@@ -141,6 +143,7 @@ public class Frame01 extends JFrame {
 
 		JMenuItem mnExe03 = new JMenuItem("Exe03");
 		mnExe03.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				PainelMetros p = new PainelMetros();
 				frame.setContentPane(p);
@@ -152,6 +155,7 @@ public class Frame01 extends JFrame {
 
 		JMenuItem mnExe04 = new JMenuItem("Exe04");
 		mnExe04.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				PainelCirc p = new PainelCirc();
 				frame.setContentPane(p);
@@ -163,6 +167,7 @@ public class Frame01 extends JFrame {
 
 		JMenuItem mnExe05 = new JMenuItem("Exe05");
 		mnExe05.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				PainelQuad p = new PainelQuad();
 				frame.setContentPane(p);

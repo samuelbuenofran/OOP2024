@@ -58,6 +58,7 @@ public class PainelNotas extends JPanel {
 
 		JButton btnCalculate = new JButton("Calculate");
 		btnCalculate.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				float grade1 = Float.parseFloat(textFieldGrade1.getText());
 				float grade2 = Float.parseFloat(textFieldGrade2.getText());
@@ -89,6 +90,7 @@ public class PainelNotas extends JPanel {
 
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				textFieldGrade1.setText("");
 				textFieldGrade2.setText("");
