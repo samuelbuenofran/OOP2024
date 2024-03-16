@@ -31,4 +31,13 @@ public class Impressora {
 			System.out.println(texto);
 		}
 	}
+
+	/*
+	 * Sugestão de métodos: 1. Imprimir em ordem inversa (espelho) 2. Receber nomes
+	 * de pessoas e imprimir uma pessoa em cada linha 3. Receber uma frase e
+	 * imprimir todas as letras em maiúsculas ou todas as letras em minúsculas. 4.
+	 * Receber uma frase e imprimir a frase sem as vogais 5. Receber uma frase e
+	 * mostrar a quantidade de letras existentes
+	 * 
+	 */
 }
