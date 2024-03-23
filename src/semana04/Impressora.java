@@ -32,14 +32,32 @@ public class Impressora {
 		}
 	}
 
-	/*
-	 * Sugestão de métodos: 1. Imprimir em ordem inversa (espelho) - usar charAt 2.
-	 * Receber nomes de pessoas e imprimir uma pessoa em cada linha. Exemplo:
-	 * "Paulo, João, Sandra, Marcos" --> usar o método split para separar as
-	 * palavras. 3. Receber uma frase e imprimir todas as letras em maiúsculas ou
-	 * todas as letras em minúsculas. --> usar toUppercase ou toLowercase 4. Receber
-	 * uma frase e imprimir a frase sem as vogais --> usar charAt ou replace 5.
-	 * Receber uma frase e mostrar a quantidade de letras existentes. Usar length.
-	 * 
-	 */
+	public static void printReverse(String text) {
+		for (int i = text.length() - 1; i >= 0; i--) {
+			System.out.print(text.charAt(i));
+		}
+	}
+
+	public static void printPeople(String[] people) {
+		for (String person : people) {
+			System.out.println(person);
+		}
+	}
+
+	public static void printUpperAndLower(String text) {
+		System.out.println(text.toUpperCase());
+		System.out.println(text.toLowerCase());
+	}
+
 }
+
+/*
+ * Sugestão de métodos: 1. Imprimir em ordem inversa (espelho) - usar charAt 2.
+ * Receber nomes de pessoas e imprimir uma pessoa em cada linha. Exemplo:
+ * "Paulo, João, Sandra, Marcos" --> usar o método split para separar as
+ * palavras. 3. Receber uma frase e imprimir todas as letras em maiúsculas ou
+ * todas as letras em minúsculas. --> usar toUppercase ou toLowercase 4. Receber
+ * uma frase e imprimir a frase sem as vogais --> usar charAt ou replace 5.
+ * Receber uma frase e mostrar a quantidade de letras existentes. Usar length.
+ * 
+ */
