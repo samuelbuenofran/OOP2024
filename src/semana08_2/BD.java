@@ -43,11 +43,21 @@ public class BD {
 	 * Encerra a conexão e libera os objetos utilizados
 	 */
 	public void close() {
-
+		// Code to close the connection
+		try {
+			con.close();
+			st.close();
+			rs.close();
+		} catch (SQLException erro) {
+			System.out.println("Erro ao fechar a conexão: " + erro.toString());
+		}
 	}
 
 	public static void main(String[] args) {
 		BD bd = new BD();
 		bd.getConnection();
+		bd.close();
 	}
+	
+	
 }
