@@ -1,4 +1,4 @@
-package semana08_2;
+package banco;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
