@@ -58,6 +58,5 @@ public class BD {
 		bd.getConnection();
 		bd.close();
 	}
-	
-	
+
 }

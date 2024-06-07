@@ -4,6 +4,5 @@ public class MotorOld {
 
 	private boolean status;
 	private int velocidade;
-	
-	
+
 }

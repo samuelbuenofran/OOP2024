@@ -27,7 +27,7 @@ public class TesteMes {
 			System.out.println(e);
 		}
 	}
-	
+
 	public static void digitarMes() throws MesInvalidoException {
 		int mes = Integer.parseInt(JOptionPane.showInputDialog("Número do mês?"));
 		if(mes < 0) {
@@ -37,8 +37,6 @@ public class TesteMes {
 			throw new MesInvalidoException("Mês superior a 12!");
 		}
 	}
-}
-<<<<<<< HEAD
-=======
+}<<<<<<<HEAD=======
 
->>>>>>> 125479ee9d1476570dcbddc1518e09a002d2e50d
+>>>>>>>125479ee 9d 1476570d cbddc1518e09a002d2e50d

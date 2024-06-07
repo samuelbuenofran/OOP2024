@@ -6,11 +6,11 @@ public class Conta {
 	private int numero;
 	private double saldo;
 	public String titular;
-	public static String banco; //pertence a classe
+	public static String banco; // pertence a classe
 
-	private String sql; //variavel auxiliar
+	private String sql; // variavel auxiliar
 
-	public Conta(int numero , double saldo, String titular) {
+	public Conta(int numero, double saldo, String titular) {
 		// this.numero = numero;
 		depositar(saldo);
 		this.saldo = saldo;
@@ -24,55 +24,55 @@ public class Conta {
 		System.out.println(saldo);
 
 	}
+
 	/**
 	 * Adiciona o valor recebido ao saldo
+	 * 
 	 * @param valor
 	 */
 	public void depositar(double valor) {
 		String men = "Deposito realizado com sucesso!";
-		if(valor <= LIMITE_DEPOSITO) {
+		if (valor <= LIMITE_DEPOSITO) {
 			saldo += valor;
-		}
-		else {
+		} else {
 			men = "O valor do depósito não pode exceder " + LIMITE_DEPOSITO + ".";
 		}
 	}
 
 	/**
-	 * Retirada do saldo o valor recebido
-	 * O valor deve ser <= 1000 de acordo com o limite
+	 * Retirada do saldo o valor recebido O valor deve ser <= 1000 de acordo com o
+	 * limite
+	 * 
 	 * @param valor
 	 */
 	public String sacar(double valor) {
 		String men = "Saque realizado com sucesso!";
-		if(valor<= LIMITE_SAQUE) {
-			if(valor<=saldo) {
-				saldo-=valor;	
-			}else {
+		if (valor <= LIMITE_SAQUE) {
+			if (valor <= saldo) {
+				saldo -= valor;
+			} else {
 				men = "Saldo insuficiente!";
 			}
-		}
-		else {
+		} else {
 			men = "O saque não pode exceder " + LIMITE_SAQUE + ".";
 		}
 		return men;
 	}
-	
+
 	/**
 	 * Realiza a transferencia de valores entre contas
-	 * @param c1 - conta a ser debitada
-	 * @param c2 - conta a ser creditada
+	 * 
+	 * @param c1    - conta a ser debitada
+	 * @param c2    - conta a ser creditada
 	 * @param valor - o valor da transferência
 	 */
 	public static void transferir(Conta c1, Conta c2, double valor) {
 		c2.saldo += valor;
 		c1.saldo -= valor;
 	}
-	
+
 	public Conta() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
 
 }

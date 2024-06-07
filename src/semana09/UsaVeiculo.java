@@ -1,21 +1,20 @@
 package semana09;
-<<<<<<< HEAD
+
+<<<<<<<HEAD
 public class UsaVeiculo {
 	public static void main(String[] args) {
-		
+
 		Veiculo v1 = new Veiculo();
 		Veiculo v2 = new Automovel();
 		Veiculo v3 = new Aviao();
 		Veiculo v4 = new Food();
-		
-
 
 	}
 
-=======
+	=======
 
-public class UsaVeiculo {
-	
+	public class UsaVeiculo {
+
 	public static void main(String[] args) {
 		Veiculo v = new Veiculo();
 		
@@ -23,6 +22,5 @@ public class UsaVeiculo {
 		
 		
 		
-	}
->>>>>>> 125479ee9d1476570dcbddc1518e09a002d2e50d
+	}>>>>>>>125479ee 9d 1476570d cbddc1518e09a002d2e50d
 }
