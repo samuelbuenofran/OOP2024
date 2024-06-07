@@ -12,6 +12,14 @@ public class BD {
 	public PreparedStatement st = null;
 	public ResultSet rs = null;
 
+	/*
+	 * The difference between a Statement and a PreparedStatement is that a
+	 * PreparedStatement is precompiled, which means that it is compiled only once
+	 * and can be executed multiple times. A Statement is not precompiled, which
+	 * 
+	 * 
+	 */
+
 	private final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private final String DATABASENAME = "java";
 	private final String URL = "jdbc:sqlserver://localhost;databasename=" + DATABASENAME;
